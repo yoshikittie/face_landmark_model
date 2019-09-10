@@ -41,8 +41,8 @@ def rotation_matrix_to_euler_angle(R):
 
 
 def draw_axis(image, pose):
-    pitch = pose[0] * np.pi / 180
-    yaw = -(pose[1] * np.pi) / 180
+    pitch = -pose[0] * np.pi / 180
+    yaw = -pose[1] * np.pi / 180
     roll = pose[2] * np.pi / 180
     
     size = image.shape
